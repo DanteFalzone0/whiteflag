@@ -12,7 +12,8 @@ class CircularNeuralNetwork:
         return 1 / (1 + np.exp(-x))
 
     def _sigmoid_deriv(self, x):
-        return math.sqrt(1+(self._sigmoid(x) * (1 - self._sigmoid(x)))**2)-1
+        return math.sqrt(100+(self._sigmoid(x) * (1 - self._sigmoid(x)))**2)-math.sqrt(100)
+        #return self._sigmoid(x) * (1 - self._sigmoid(x))
 
     def predict(self, input_vector):
         layer_1 = np.dot(input_vector, self.weights) + self.bias
@@ -160,7 +161,7 @@ targets = np.array([0, 1, 0, 1 ,0 ,1, 1 ,0])
 learning_rate = 0.1
 neural_network = CircularNeuralNetwork(learning_rate)
 
-training_error = neural_network.train(input_vectors, targets, 10000)
+training_error = neural_network.train(input_vectors, targets, 100000)
 
 plt.plot(training_error)
 plt.xlabel("Circular Iterations")
@@ -169,7 +170,7 @@ plt.savefig("circular_cumulative_error.png")
 
 neural_network = NeuralNetwork(learning_rate)
 
-training_error = neural_network.train(input_vectors, targets, 10000)
+training_error = neural_network.train(input_vectors, targets, 100000)
 
 plt.plot(training_error)
 plt.xlabel("Circular Iterations")
