@@ -1,0 +1,2 @@
+cargo:rustc-env=TYPENUM_BUILD_CONSTS=/Users/adenhandasyde/GitHub/whiteflag/rust/target/wasm32-unknown-unknown/debug/build/typenum-3361b668bc53b07d/out/consts.rs
+cargo:rustc-env=TYPENUM_BUILD_OP=/Users/adenhandasyde/GitHub/whiteflag/rust/target/wasm32-unknown-unknown/debug/build/typenum-3361b668bc53b07d/out/op.rs
