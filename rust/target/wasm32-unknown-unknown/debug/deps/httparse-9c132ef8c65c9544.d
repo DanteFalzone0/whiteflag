@@ -1,0 +1,11 @@
+/Users/adenhandasyde/GitHub/whiteflag/rust/target/wasm32-unknown-unknown/debug/deps/httparse-9c132ef8c65c9544.rmeta: /Users/adenhandasyde/.cargo/registry/src/github.com-1ecc6299db9ec823/httparse-1.7.1/src/lib.rs /Users/adenhandasyde/.cargo/registry/src/github.com-1ecc6299db9ec823/httparse-1.7.1/src/iter.rs /Users/adenhandasyde/.cargo/registry/src/github.com-1ecc6299db9ec823/httparse-1.7.1/src/macros.rs /Users/adenhandasyde/.cargo/registry/src/github.com-1ecc6299db9ec823/httparse-1.7.1/src/simd/mod.rs /Users/adenhandasyde/.cargo/registry/src/github.com-1ecc6299db9ec823/httparse-1.7.1/src/simd/fallback.rs
+
+/Users/adenhandasyde/GitHub/whiteflag/rust/target/wasm32-unknown-unknown/debug/deps/libhttparse-9c132ef8c65c9544.rlib: /Users/adenhandasyde/.cargo/registry/src/github.com-1ecc6299db9ec823/httparse-1.7.1/src/lib.rs /Users/adenhandasyde/.cargo/registry/src/github.com-1ecc6299db9ec823/httparse-1.7.1/src/iter.rs /Users/adenhandasyde/.cargo/registry/src/github.com-1ecc6299db9ec823/httparse-1.7.1/src/macros.rs /Users/adenhandasyde/.cargo/registry/src/github.com-1ecc6299db9ec823/httparse-1.7.1/src/simd/mod.rs /Users/adenhandasyde/.cargo/registry/src/github.com-1ecc6299db9ec823/httparse-1.7.1/src/simd/fallback.rs
+
+/Users/adenhandasyde/GitHub/whiteflag/rust/target/wasm32-unknown-unknown/debug/deps/httparse-9c132ef8c65c9544.d: /Users/adenhandasyde/.cargo/registry/src/github.com-1ecc6299db9ec823/httparse-1.7.1/src/lib.rs /Users/adenhandasyde/.cargo/registry/src/github.com-1ecc6299db9ec823/httparse-1.7.1/src/iter.rs /Users/adenhandasyde/.cargo/registry/src/github.com-1ecc6299db9ec823/httparse-1.7.1/src/macros.rs /Users/adenhandasyde/.cargo/registry/src/github.com-1ecc6299db9ec823/httparse-1.7.1/src/simd/mod.rs /Users/adenhandasyde/.cargo/registry/src/github.com-1ecc6299db9ec823/httparse-1.7.1/src/simd/fallback.rs
+
+/Users/adenhandasyde/.cargo/registry/src/github.com-1ecc6299db9ec823/httparse-1.7.1/src/lib.rs:
+/Users/adenhandasyde/.cargo/registry/src/github.com-1ecc6299db9ec823/httparse-1.7.1/src/iter.rs:
+/Users/adenhandasyde/.cargo/registry/src/github.com-1ecc6299db9ec823/httparse-1.7.1/src/macros.rs:
+/Users/adenhandasyde/.cargo/registry/src/github.com-1ecc6299db9ec823/httparse-1.7.1/src/simd/mod.rs:
+/Users/adenhandasyde/.cargo/registry/src/github.com-1ecc6299db9ec823/httparse-1.7.1/src/simd/fallback.rs:
