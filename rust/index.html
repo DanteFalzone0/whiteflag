@@ -1,10 +1,11 @@
+<!-- # Copyright Aden Handasyde 2019 -->
 <!DOCTYPE html>
 <html>
     <head>
         <link rel="icon" href="data:;base64,iVBORwOKGO=" /> <!--Makes the favicon nothing to prevent a consol error-->
     </head>
     <body style="background-color: black; margin: 0; overflow: hidden;">
-    	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
    <script src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js"
    integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ=="
    crossorigin=""></script>
@@ -12,36 +13,58 @@
    <link rel="stylesheet" href="js/leaflet-routing-machine.css" />
    <script src="js/leaflet-routing-machine.js"></script>
 
-<p style="position: relative; top: 600px; color: white;">   TriiipAdvisor
+   <div>
+<p style="position: relative; top: 0px; color: white;">   TriiipAdvisor
 A Review System For Anonymous Tripping
 Drop down menus with options to search on, can pick any, as many, or none, defaults to Other
+<style>
+  #time-chill {
 
-Time: Chill | Day | Night | Both | Overnight | Weekend | Public Holiday | Weeklong | Trippy | Other
-Duration: Chill | 3-5 hours | 5-8 hours | 8-12 hours | 12 - 24 hours | Trippy | Other
-Astrology: Chill | Alignment | Full Moon | New Moon | Blue Moon | Eclipse | Comet Shower | Trippy | Other
-Setting: Chill | Indoors | Outdoors | Water | Trippy | Other
-Set: Chill | Party | Chat | Create | Fun | Trippy | Other
-Activity: Chill | Bicycle | Motorbike | Car | Roadtrip | Train | Plane | Bus | Trippy | Other
-Beliefs: Chill | Anti-authority | Libertarian | Money-Free | Democratic | Anarchic | Occult | Christian | Gnostic | Muslim | Buddhist | New Age | Hippy | Futurist | Transhuman | Capitalist | Nihilist | Solipsist | Optimist | Realist | Idealist | Surrealist | Trippy | Other
-Music: Chill | Rock | Punk | EDM | Psytrance | Alternative | Classical | Trippy | Other
-Drug Use: Muggle (square) | Virgin (my-first-trip) | Tripper | Magician (10+ good-trips) | Wizard (10+ male) | Witch (10+ female) | Death-eater (10+ bad-trips) | God (100+ trips) | Angel (100+ good-trips) | Demon (100+ bad-trips) | Ent (1000+ trips) | Goddess (1000+ good-trips) | Demigod (1000+ bad-trips) | Planet (10,000+ trips) | Star (10,000+ good-trips) | Black hole (10,000+ bad-trips)
-Premeditated: Constant | Final Surprise | Progressive Reveal | Totally Unknown
-Notice Board: For Sale | Wanted | Trade | Advertisement | Service | Rent
-Events: Time | Location | People
-Journals: Muggle News | Muggle Declares Magic | Lone Tripper Magic | Group Trip Magic | Dreams | Premonitions | Telepathy | Telekinesis | Multiverse | Multidimensional | Other
-Live Feed: GPS | Audio | Video
-Create Temporary display names that can be deleted whenever you'd like, while your account name is different to ensure your experience is gained in the case of wanting a big rating.
+  }
 
+  .time-chill-search {
+    display: none;
+    transform: translateY(0px); 
+    pointer-events: auto;
+  }
+
+  
+
+  .time-chill:hover .time-chill-search, .time-chill-search:hover {
+    display: block;
+  }
+
+
+</style>
+<br>Time: <span class="time-chill">Chill<span class="time-chill-search">Search: <input></span></span> | <span>Day<span class="time-chill-search">Search: <input></span></span> | <span>Night<span class="time-chill-search">Search: <input></span></span> | <span>Both<span class="time-chill-search">Search: <input></span></span> | <span>Overnight<span class="time-chill-search">Search: <input></span></span> | <span>Weekend<span class="time-chill-search">Search: <input></span></span> | <span>Public Holiday<span class="time-chill-search">Search: <input></span></span>
+<br><br>
+<span>Weeklong</span> | <span>Trippy</span> | <span>Other</span>
+<br><br>Duration: Chill | 3-5 hours | 5-8 hours | 8-12 hours | 12 - 24 hours | Trippy | Other
+<br>Astrology: Chill | Alignment | Full Moon | New Moon | Blue Moon | Eclipse | Comet Shower | Trippy | Other
+<br>Setting: Chill | Indoors | Outdoors | Water | Trippy | Other
+<br>Set: Chill | Party | Chat | Create | Fun | Trippy | Other
+<br>Activity: Chill | Bicycle | Motorbike | Car | Roadtrip | Train | Plane | Bus | Trippy | Other
+<br>Beliefs: Chill | Anti-authority | Libertarian | Money-Free | Democratic | Anarchic | Occult | Christian | Gnostic | Muslim | Buddhist | New Age | Hippy | Futurist | Transhuman | Capitalist | Nihilist | Solipsist | Optimist | Realist | Idealist | Surrealist | Trippy | Other
+<br>Music: Chill | Rock | Punk | EDM | Psytrance | Alternative | Classical | Trippy | Other
+<br>Drug Use: Muggle (square) | Virgin (my-first-trip) | Tripper | Magician (10+ good-trips) | Wizard (10+ male) | Witch (10+ female) | Death-eater (10+ bad-trips) | God (100+ trips) | Angel (100+ good-trips) | Demon (100+ bad-trips) | Ent (1000+ trips) | Goddess (1000+ good-trips) | Demigod (1000+ bad-trips) | Planet (10,000+ trips) | Star (10,000+ good-trips) | Black hole (10,000+ bad-trips)
+<br>Premeditated: Constant | Final Surprise | Progressive Reveal | Totally Unknown
+<br>Notice Board: For Sale | Wanted | Trade | Advertisement | Service | Rent
+<br>Events: Time | Location | People
+<br>Journals: Muggle News | Muggle Declares Magic | Lone Tripper Magic | Group Trip Magic | Dreams | Premonitions | Telepathy | Telekinesis | Multiverse | Multidimensional | Other
+<br>Live Feed: GPS | Audio | Video
+<br>Create Temporary display names that can be deleted whenever you'd like, while your account name is different to ensure your experience is gained in the case of wanting a big rating.
+<br>
 Create Posts that change with time, so you can reveal more of the plan as you get closer, or give people a pre-empted opt-in/opt-out surprise
-
+<br>
 All Tracking is Opt-In and Deletable, only those that scrape and store the database will know the individual pieces, but you may scramble the connections so they can't correlate it's sequence.
-
+<br>
 Anything can be supervised or shut-down by Police or Otherwise, Be careful, especially if you are alone.
-
+<br>
 Take the Red Pill in Emergencies
-
+<br>
 Take the Blue Pill at all times.
    </p>
+ </div>
   <div id="map" class="dragme" style='height: 800px; position: relative; top: 600px;'>
      
    </div>
@@ -75,3 +98,4 @@ Take the Blue Pill at all times.
         
     </body>
 </html>
+
